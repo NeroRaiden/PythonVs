@@ -1,2 +1,1 @@
-import aiogram
-print('Hello world')  
+print ('Hello world')
