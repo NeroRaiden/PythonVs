@@ -45,7 +45,7 @@ def get_user_image_trigger(user_text):
     if trigger1 and trigger2:
         photo = random.choice(image_group[group])
         with open(IMAGE_DIR+group+'/'+photo, 'rb') as photo_file:
-         return photo_file.read()
+         return photo_file
 
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
